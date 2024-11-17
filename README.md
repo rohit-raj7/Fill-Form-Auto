@@ -17,9 +17,11 @@ Chrome API: Manifest V3
 
 
 📦 AutoFill Form Extension
-├── 📜 manifest.json         # Chrome Extension configuration file   
+├── 📜 manifest.json        
+# Chrome Extension configuration file   
 
-├── 📜 popup.html            # HTML for the extension's popup
+├── 📜 popup.html           
+# HTML for the extension's popup
 
 ├── 📜 popup.css             # Styles for the extension's popup
 
