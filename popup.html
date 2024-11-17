@@ -1,0 +1,588 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JobFillr - Autofill for Job Applications</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body style="padding-bottom: 5px; padding-top: 5px">
+    <div class="main_container">
+    <div class="container">
+      <div class="flex-row" style="align-items: center">
+
+          <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="#EA33F7"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.45 16h2.09L9.43 3H7.57L2.46 16h2.09l1.12-3h5.64l1.14 3zm-6.02-5L8.5 5.48 10.57 11H6.43zm15.16.59l-8.09 8.09L9.83 16l-1.41 1.41 5.09 5.09L23 13l-1.41-1.41z"/></svg>
+
+          <h2 style="margin:0px 9px; color:#e31ec9;">Automatically Fill Form.</h2>
+
+      </div>
+      <br>
+      <div class="fill_form">
+        <a class="my-button" href="#" id="fill_Auto">Fill Automatically</a>
+      </div>
+    </div>
+    <br>
+    <div class="toggle_button">
+      <p class="toggle_tag">Applying to private sector</p>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="toggle_button">
+      <p class="toggle_tag">Applying to government sector</p>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <br>
+    
+      
+      <div class="flex-row" style="justify-content: space-between">
+      
+      </div>
+          
+    <div class="form_click">
+        <button id="firstFillForm">Click Fill Form</button>
+      <div class="arrow" id="firstFillForm1">
+       
+        <span id="firstFillForm1"></span>
+        <span id="firstFillForm1"></span>
+        <span id="firstFillForm1"></span>
+    </div>
+</div>
+        
+    </div>
+    <br>
+    <div class="footer">
+      <div class="footer_small">
+        <a class="footer-link" href="private-policy.html" target="_blank">Privacy</a>
+          <a class="footer-link" href="www.youtube.com" target="_blank">Contact me</a>
+          <a class="footer-link" href="https://groups.google.com/" target="_blank">Help?</a>
+      </div>
+  </div>
+  <!-- ___________________________________________ -->
+     
+  <div class="form-container">
+    <div class="nav_left">
+     <ul class="nav-tab" id="myNav" role="tablist">
+        
+           <a class="nav-link active" id="personal-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="personal" aria-selected="true">Personel Details</a>
+             <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+             <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Work Experience</a>
+             <a class="nav-link" id="job-tab" data-toggle="tab" href="#job" role="tab" aria-controls="job" aria-selected="false">Job</a>
+           <a class="nav-link" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="other" aria-selected="false">Other</a>
+       <!-- <br><br><br><br><br> -->
+        <div style="margin-top: 25rem; margin-bottom: 2rem;">
+            <button  type="submit" class="btn btn-primary" id="save" style="border: 1px solid rgb(2, 13, 97);">Save</button>
+            <br>
+            <br>
+            <button type="reset" class="btn btn-primary" id="reset"style="border: 1px solid rgb(2, 13, 97);">Clear</button>
+        </div>
+     </ul>
+    </div> 
+
+     <div class="tab-content" id="myTabContent">
+
+         <div class="tab-pane" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+             <h3 class="Head_form_header">Personel Details</h3>
+
+             <br>
+             <form>
+
+                 <div class="form-row">
+                     <div class="form-group">
+                         <label for="prefix">Prefix</label>
+                         <select id="prefix" name="prefix" class="form-control">
+                             <option value="" selected>--</option>
+                             <option value="mr">Mr</option>
+                             <option value="mrs">Mrs</option>
+                             <option value="miss">Miss</option>
+                             <option value="ms">Ms</option>
+                             <option value="mdm">Mdm</option>
+                             <option value="prof">Prof</option>
+                             <option value="dr">Dr</option>
+                         </select>
+                     </div>
+     
+                     <div class="form-group">
+                         <label for="firstname">First Name</label>
+                         <input type="text" class="form-control" id="firstname" placeholder="Rohit">
+                     </div>
+     
+                     <div class="form-group">
+                         <label for="middlename">Middle Name</label>
+                         <input type="text" class="form-control" id="middlename" placeholder="Raj">
+                     </div>
+     
+                     <div class="form-group">
+                         <label for="lastname">Last Name</label>
+                         <input type="text" class="form-control" id="lastname" placeholder="Pappu">
+                     </div>
+                 </div>
+                 <!-- __ -->
+                 <div class="form-row"> 
+                   
+                
+                    <div class="form-group">
+                        <label for="fathername">Father's Name</label>
+                        <input type="text" class="form-control" id="fathername" placeholder="Ramesh">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="mothername">Mother's Name</label>
+                        <input type="text" class="form-control" id="mothername" placeholder="Punam">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="aadhaarno">Aadhaar No</label>
+                        <input type="text" class="form-control" id="aadhaarno" placeholder="8321111111">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="Banka,Bihar">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="Banka">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" placeholder="Bihar">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="postal">Pin Code</label>
+                        <input type="text" class="form-control" id="postal" placeholder="813102">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" class="form-control" id="country" placeholder="India">
+                    </div>
+                </div>
+     
+                 <div class="form-row">
+                     <div class="form-group">
+                         <label for="email">Email</label>
+                         <input type="email" class="form-control" id="email" placeholder="ex@gmail.com">
+                     </div>
+
+                     <div class="form-group">
+                         <label for="phone">Phone</label>
+                         <input type="tel" class="form-control" id="phone" placeholder="+917060000000">
+                     </div>
+
+                     <div class="form-group">
+                         <label for="nationality">Nationality</label>
+                         <input type="nationality" class="form-control" id="nationality" placeholder="----">
+                     </div>
+                 </div>
+
+                 <div class="form-row">
+                     <div class="form-group">
+                         <label for="linkedin">LinkedIn URL</label>
+                         <input type="text" class="form-control" id="linkedin" placeholder="https://linkedin.com/">
+                     </div>
+
+                     <div class="form-group">
+                         <label for="twitter">Twitter URL</label>
+                         <input type="text" class="form-control" id="twitter" placeholder="https://twitter.com/">
+                     </div>
+                 </div>
+
+                 <div class="form-row">
+                     <div class="form-group">
+                         <label for="github">Github URL</label>
+                         <input type="text" class="form-control" id="github" placeholder="https://github.com/example">
+                     </div>
+
+                     <div class="form-group">
+                         <label for="website">Website</label>
+                         <input type="text" class="form-control" id="website" placeholder="https://yourwebsite.com">
+                     </div>
+                     <div class="form-group">
+                         <label for="portfolio">Portfolio</label>
+                         <input type="text" class="form-control" id="portfolio" placeholder="https://portfolio.com">
+                     </div>
+
+                 </div>
+
+                 <div class="form-row">
+                     <div class="form-group">
+                         <label for="gender">Gender</label>
+                         <select id="gender" name="gender" class="form-control">
+                             <option value="">--</option>
+                             <option value="male">Male</option>
+                             <option value="female">Female</option>
+                             <option value="nonbinary">Non-Binary</option>
+                             <option value="genderqueer">Genderqueer</option>
+                             <option value="other">Other</option>
+                             <option value="decline">Prefer not to say</option>
+                         </select>
+                     </div>
+                 </div>
+
+             </form>
+              
+             <div class="form-group" id="naxt_tab_container">
+                 <label>&nbsp;</label>
+                 <!-- <a class="nav-link" id="next-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Next</a> -->
+             </div>
+
+         </div>
+
+         <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+             <h3 class="Head_form_header">Education</h3>
+             <br>
+             <div class="education-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="university">University</label>
+                        <input type="text" class="form-control" id="university" name="university" placeholder="xyz University">
+                    </div>
+                    <div class="form-group">
+                        <label for="school">School or Institution</label>
+                        <input type="text" class="form-control" id="school" name="school" placeholder="xyz College">
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <a href="#" id="border" class="remove-edu-form">[-] Remove</a>
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="degree">Degree</label>
+                        <select class="form-control" id="degree" name="degree">
+                            <option value="">--</option>
+                            <option value="Post-Doctorate">Post-Doctorate</option>
+                            <option value="Doctor of Medicine">Doctor of Medicine</option>
+                            <option value="Doctorate or PhD">Doctorate or PhD</option>
+                            <option value="Juris Doctor">Juris Doctor</option>
+                            <option value="Masters">Masters</option>
+                            <option value="Bachelors">Bachelors</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="other-degree">Other Degree</label>
+                        <input type="text" class="form-control" id="other-degree" name="other-degree" placeholder="Fill degree">
+                    </div>
+                    <div class="form-group">
+                        <label for="stream">Stream</label>
+                        <input type="text" class="form-control" id="stream" name="stream" placeholder="Computer Science">
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="edu-startdate">Start Date</label>
+                        <input type="date" class="form-control" id="edu-startdate" name="edu-startdate">
+                    </div>
+                    <div class="form-group">
+                        <label for="edu-enddate">End Date</label>
+                        <input type="date" class="form-control" id="edu-enddate" name="edu-enddate">
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="form-group" id="naxt_tab_container">
+                <label>&nbsp;</label>
+            <a href="#" class="border" id="add_edu">[+] Add Education</a>
+            <!-- <a class="nav-link" id="next-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Next</a> -->
+           </div> 
+            <br>
+            <br>
+        </div>
+
+        <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+            <h3 class="Head_form_header">Work Experience</h3>
+            <br>
+
+            <div class="experience-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" class="form-control" id="company" name="company" placeholder="xyz">
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Position</label>
+                        <input type="text" class="form-control" id="position" name="position" placeholder="Position">
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <a href="#" id="border" class="remove-experience-form">[-] Remove</a>
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="exp-startdate">Start Date</label>
+                        <input type="date" class="form-control" id="exp-startdate" name="exp-startdate">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="exp-enddate">End Date</label>
+                        <input type="date" class="form-control" id="exp-enddate" name="exp-enddate">
+                    </div>
+                </div>
+            </div>
+               
+            <div class="form-group" id="naxt_tab_container">
+                <label>&nbsp;</label>
+                <a href="#" class="border"  id="add_exp">[+] Add Company</a>
+                <!-- <a class="nav-link" id="next-tab" data-toggle="tab" href="#job" role="tab" aria-controls="experience" aria-selected="false">Next</a> -->
+               </div> 
+            <br>
+            <br>
+            
+        </div>
+
+
+             
+         <div class="tab-pane fade" id="job" role="tabpanel" aria-labelledby="job-tab">
+             <h3 class="Head_form_header">Job</h3>
+             <br>
+             <div class="job-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="job">Job</label>
+                        <input type="text" class="form-control" id="company" name="company" placeholder="xyz">
+                    </div>
+                    <div class="form-group">
+                        <label>Notice period</label>
+                        <input type="text" class="form-control" id="notice-period" name="notice-period" placeholder="---">
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <a href="#" id="border" class="form-control">[-] Remove</a>
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" class="form-control" id="location" name="location" placeholder="---">
+                    </div>
+                    <div class="form-group">
+                        <label>Variable Salary/Bonus</label>
+                        <input type="text" class="form-control" id="variable-salary" name="variable-salary" placeholder="---">
+                    </div>
+                    <div class="form-group">
+                        <label>Expected Salary</label>
+                        <input type="text" class="form-control" id="expected-salary" name="expected-salary" placeholder="---">
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Years of Experience</label>
+                        <select class="form-control" id="experience" name="experience">
+                            <option value="">--</option>
+                            <option value="Less than 1 year">Less than 1 year</option>
+                            <option value="1 year">1 year</option>
+                            <option value="2 years">2 years</option>
+                            <option value="3 years">3 years</option>
+                            <option value="4 years">4 years</option>
+                            <option value="5 years">5 years</option>
+                            <option value="6-10 years">6-10 years</option>
+                            <option value="11-15 years">11-15 years</option>
+                            <option value="16-20 years">16-20 years</option>
+                            <option value="More than 20 years">More than 20 years</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <br>
+            </div>
+            
+                
+             <div class="form-group" id="naxt_tab_container">
+                 <label>&nbsp;</label>
+                 <a href="#" class="border"  id="add_job">[+] Add Job</a>
+                 <!-- <a class="nav-link" id="next-tab" data-toggle="tab" href="#other" role="tab" aria-controls="experience" aria-selected="false">Next</a> -->
+                </div> 
+              
+             <br>
+             <br> 
+            
+         </div>
+        
+            
+         <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+             <h3 class="Head_form_header">Other Info</h3>
+             <br>
+             <form>
+
+                 <div class="form-row" id="Experience_details">
+                      
+                    <div class="form-group">
+                        <label for="current-salary">Current Salary</label>
+                        <input type="text" class="form-control" id="current-salary" placeholder="ex: 100000, 100000 INR">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="expected-salary">Expected Salary</label>
+                        <input type="text" class="form-control" id="expected-salary" placeholder="200000 INR">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notice-period">Notice Period</label>
+                        <input type="text" class="form-control" id="notice-period" placeholder="ex: 1 month">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="earliest-available-date">Start Date</label>
+                            <input type="date" class="form-control" id="earliest-available-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="latest-available-date">End Date</label>
+                            <input type="date" class="form-control" id="latest-available-date">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cover">Cover Letter</label>
+                            <textarea class="form-control" id="coverletter" rows="10">
+   ${NAME}
+   ${EMAIL}
+   ${PHONE}
+   
+   Dear Hiring Manager,
+                                
+   I am excited to apply for the ${JOB} position at ${COMPANY}. With a solid background as a Full Stack Developer and a passion for creative solutions, I am confident in my ability to contribute effectively to your team.
+   In my previous role, I focused on developing innovative software solutions and driving product development. I’m driven by the challenge of solving complex problems and always strive to bring fresh perspectives to my work. Like ${COMPANY}, I am committed to staying at the forefront of industry advancements to ensure impactful results.
+   I have built a reputation for my strong technical abilities and leadership skills, and I work well in collaborative environments. I believe that these qualities will allow me to make meaningful contributions to ${COMPANY} and help drive successful outcomes for your team.
+                                Thank you for considering my application. I look forward to the opportunity to discuss how my experience and skills align with ${COMPANY}'s goals.
+                                
+   Sincerely,
+   ${NAME}
+                                </textarea>
+                                
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="gender">Gender Identity</label>
+                            <select id="gender-identity" class="form-control">
+                                <option value="">--</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="nonbinary">Non-Binary</option>
+                                <option value="genderqueer">Genderqueer</option>
+                                <option value="other">Other</option>
+                                <option value="decline">Prefer not to say</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="race">Race / Ethnicity</label>
+                            <select id="race-ethnicity" class="form-control">
+                                <option value="">--</option>
+                                <option value="hispanic-latino">Hispanic or Latino</option>
+                                <option value="asian">Asian (Not Hispanic or Latino)</option>
+                                <option value="black">Black or African American (Not Hispanic or Latino)</option>
+                                <option value="white">White (Not Hispanic or Latino)</option>
+                                <option value="native-hawaiian">Native Hawaiian or Pacific Islander (Not Hispanic or Latino)</option>
+                                <option value="native-american">Native American or Alaska Native (Not Hispanic or Latino)</option>
+                                <option value="two-more-races">Two or More Races (Not Hispanic or Latino)</option>
+                                <option value="decline">Prefer not to say</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="sexual">Sexual Orientation</label>
+                            <select id="sexual-orientation" class="form-control">
+                                <option value="">--</option>
+                                <option value="asexual">Asexual / Aromantic</option>
+                                <option value="bisexual">Bisexual</option>
+                                <option value="gay">Gay</option>
+                                <option value="lesbian">Lesbian</option>
+                                <option value="heterosexual">Heterosexual / Straight</option>
+                                <option value="pansexual">Pansexual</option>
+                                <option value="queer">Queer</option>
+                                <option value="same-gender-loving">Same-Gender Loving</option>
+                                <option value="questioning">Questioning</option>
+                                <option value="other">Other</option>
+                                <option value="decline">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="disability">Disability Status</label>
+                            <select id="disability" class="form-control">
+                                <option value="">--</option>
+                                <option value="yes">Yes, I have a disability</option>
+                                <option value="no">No, I do not have a disability</option>
+                                <option value="decline">Prefer not to say</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="veteran">Veteran Status</label>
+                            <select id="veteran-status" class="form-control">
+                                <option value="">--</option>
+                                <option value="notprotected">I am not a protected veteran</option>
+                                <option value="protected">I identify as one or more of the classifications of a protected veteran</option>
+                                <option value="recently-separated">Recently Separated Veteran</option>
+                                <option value="disabled-veteran">Disabled Veteran</option>
+                                <option value="active-duty-wartime">Active Duty Wartime or Campaign Badge Veteran</option>
+                                <option value="armed-forces-service-medal">Armed Forces Service Medal Veteran</option>
+                                <option value="decline">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="resume">Resume / CV <small>(less than 2MB)</small> <span class="text-warning d-none" id="unsaved-resume"><i>(unsaved)</i></span></label>   
+                      <input type="file" id="resume-file">
+                      <span id="resume-file-name"></span>
+                     </div>
+                   </div>
+                    
+             </form>
+
+         </div>
+         
+         <br>
+     </div>
+     </div>
+  <!-- __ -->
+     
+   
+ 
+
+</div>
+  <script src="form.js"></script>
+   <script src="popup.js"></script>
+  
+  
+  
+  
+  
+  </body>
+</html>
