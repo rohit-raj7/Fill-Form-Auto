@@ -50,24 +50,12 @@ Add support for more advanced field detection.
 Integrate cloud storage for cross-device syncing.
 Provide keyboard shortcuts for faster form filling.
 .
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
+
 .
 
+.
+
+.
+
+.
 
