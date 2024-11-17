@@ -12,16 +12,14 @@ Privacy-Friendly: All data is stored locally in your browser for maximum securit
 Frontend: HTML5, CSS3
 Logic: JavaScript
 Chrome API: Manifest V3
-
+______________________________________________________________________________________________________________________________________________________________________________________________________
 📂 Project Structure
 
-
 📦 AutoFill Form Extension
-├── 📜 manifest.json        
-# Chrome Extension configuration file   
 
-├── 📜 popup.html           
-# HTML for the extension's popup
+├── 📜 manifest.json        # Chrome Extension configuration file   
+
+├── 📜 popup.html           # HTML for the extension's popup
 
 ├── 📜 popup.css             # Styles for the extension's popup
 
@@ -37,6 +35,8 @@ Chrome API: Manifest V3
 
 ├── 📜 content.js            # The internal logic for the extension group   
 
+
+__________________________________________________________________________________________________________________________________________
 
 ![image](https://github.com/user-attachments/assets/86e191c8-7032-4913-b252-0f21c65cdb11)
 ![Screenshot 2024-11-17 175744](https://github.com/user-attachments/assets/5c65b478-e4d0-4d55-800d-9628631234f3)
