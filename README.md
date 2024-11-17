@@ -17,14 +17,22 @@ Chrome API: Manifest V3
 
 
 📦 AutoFill Form Extension
-├── 📜 manifest.json         # Chrome Extension configuration file                             
+├── 📜 manifest.json         # Chrome Extension configuration file   
+
 ├── 📜 popup.html            # HTML for the extension's popup
+
 ├── 📜 popup.css             # Styles for the extension's popup
+
 ├── 📜 popup.js              # Logic for the extension's popup
+
 ├── 📜 background.js         # Background script for handling events
+
 ├── 📂 icon.png              # Icons and other assets
+
 ├── 📜 private-policy.html   # HTML for the extension's policy 
+
 ├── 📂 form.js               # Styles for the extension's form
+
 ├── 📜 content.js            # The internal logic for the extension group   
 
 
@@ -41,6 +49,25 @@ Navigate to any form, click the Fill Form button, and watch the magic happen!
 Add support for more advanced field detection.
 Integrate cloud storage for cross-device syncing.
 Provide keyboard shortcuts for faster form filling.
-
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
 
 
