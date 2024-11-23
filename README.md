@@ -13,28 +13,28 @@ Frontend: HTML5, CSS3
 Logic: JavaScript
 Chrome API: Manifest V3
 ______________________________________________________________________________________________________________________________________________________________________________________________________
+
 📂 Project Structure
 
 📦 AutoFill Form Extension
 
-├── 📜 manifest.json        # Chrome Extension configuration file   
+├── 📜 manifest.json         # Chrome Extension configuration file.Contains metadata like name, version, description, permissions, and entry points (popup, background scripts, etc.).   
 
-├── 📜 popup.html           # HTML for the extension's popup
+├── 📜 popup.html            # The HTML file for the popup window displayed when the extension icon is clicked.
 
 ├── 📜 popup.css             # Styles for the extension's popup
 
-├── 📜 popup.js              # Logic for the extension's popup
+├── 📜 popup.js              # JavaScript logic for the popup UI.
 
-├── 📜 background.js         # Background script for handling events
+├── 📜 background.js         # Facilitates communication between popup and content scripts.
 
-├── 📂 icon.png              # Icons and other assets
+├── 📂 icon.png              # Icons for the extension, used in the toolbar, Web Store, and other display areas.
 
-├── 📜 private-policy.html   # HTML for the extension's policy 
+├── 📜 private-policy.html   # Privacy Policy page for extensions that collect user data.
 
 ├── 📂 form.js               # Styles for the extension's form
 
-├── 📜 content.js            # The internal logic for the extension group   
-
+├── 📜 content.js            # Used for modifying web content, injecting features, or scraping data
 
 __________________________________________________________________________________________________________________________________________
 
@@ -58,6 +58,7 @@ Navigate to any form, click the Fill Form button, and watch the magic happen!
 Add support for more advanced field detection.
 Integrate cloud storage for cross-device syncing.
 Provide keyboard shortcuts for faster form filling.
+
 .
 
 .
