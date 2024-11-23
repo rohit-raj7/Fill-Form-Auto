@@ -170,8 +170,8 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px; /* Decreased width */
-  height: 24px; /* Decreased height */
+  width: 40px; 
+  height: 24px; 
 }
 
 .switch input {
@@ -239,7 +239,7 @@ input:checked + .slider:before {
   .footer_small {
     display: flex;
     justify-content: center;
-    gap: 23px; /* Space between each link */
+    gap: 23px;
   }
   
   .footer-link {
@@ -252,7 +252,7 @@ input:checked + .slider:before {
   }
   
   .footer-link:hover {
-    color: #c7cbd0; /* Change color on hover */
+    color: #c7cbd0; 
     text-decoration: underline;
   }
   
