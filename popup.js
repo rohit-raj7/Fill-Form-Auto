@@ -96,14 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
-
-
-//Console log
 function loadStoredValues() {
     chrome.storage.sync.get(fields, (data) => {
-        console.log("Loaded data:", data); // Log the loaded data
+        console.log("Loaded data:", data); 
         fields.forEach(field => {
             const value = data[field] || '';
             const input = document.getElementById(field);
