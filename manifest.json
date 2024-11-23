@@ -20,7 +20,7 @@
         "128": "icon.png"
     },
     "background": {
-        "service_worker": "xyz.js"
+        "service_worker": "Background.js"
     },
     "content_scripts": [
         {
